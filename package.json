@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vercel dev",
-    "build": "tsc -p tsconfig.json --pretty false",
+    "build": "echo \"no build\"",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
