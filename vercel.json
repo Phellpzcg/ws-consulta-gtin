@@ -1,1 +1,7 @@
-
+{
+  "functions": {
+    "api/gtin/consultar.ts": {
+      "maxDuration": 20
+    }
+  }
+}
