@@ -1,10 +1,10 @@
 import https from "node:https";
-import { requireApiKey } from "../../src/security/auth";
-import { createMtlsAgent } from "../../src/security/mtls";
-import { validateGtin } from "../../src/validation/gtin";
-import { buildSoapEnvelope } from "../../src/soap/buildEnvelope";
-import { parseSoapXml } from "../../src/soap/parseResponse";
-import { friendlyForCStat } from "../../src/messages/cstatFriendly";
+import { requireApiKey } from "../../src/security/auth.js";
+import { createMtlsAgent } from "../../src/security/mtls.js";
+import { validateGtin } from "../../src/validation/gtin.js";
+import { buildSoapEnvelope } from "../../src/soap/buildEnvelope.js";
+import { parseSoapXml } from "../../src/soap/parseResponse.js";
+import { friendlyForCStat } from "../../src/messages/cstatFriendly.js";
 
 function json(status: number, body: any): Response {
   return new Response(JSON.stringify(body, null, 2), {
